@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <div class="cart">
+        <div class="item">
+            <span class="item-name">product1</span>
+            <button class="quantity-btn" onclick="adjustQuantity('product1', -1)">-</button>
+            <span class="quantity" id="product1">1</span>
+            <button class="quantity-btn" onclick="adjustQuantity('product1', 1)">+</button>
+            <button class="delete-btn" onclick="deleteItem('product1')">Delete</button>
+            <button id="like" class="like-btn" onclick="toggleLike1('product1')">Like</button>
+            <span class="price">$10</span>
+        </div>
+        <div class="item">
+            <span class="item-name">Product 2</span>
+            <button class="quantity-btn" onclick="adjustQuantity('product2', -1)">-</button>
+            <span class="quantity" id="product2">1</span>
+            <button class="quantity-btn" onclick="adjustQuantity('product2', 1)">+</button>
+            <button class="delete-btn" onclick="deleteItem('product2')">Delete</button>
+            <button id="like2" class="like-btn" onclick="toggleLike2('product2')">Like</button>
+            <span class="price">$15</span>
+        
+    </div>
+    <div class="total">
+        <span>Total:</span>
+        <span id="total-price">$10</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
